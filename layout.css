@@ -3,6 +3,7 @@ body {
   font-family: "Courier New", Courier, monospace;
   padding: 1rem;
   width: auto;
+  background-color: rgba(132, 193, 91, 255);
 }
 #container {
   background-color: rgba(132, 193, 91, 255);
@@ -17,7 +18,8 @@ body {
 #navbar {
   display: flex;
   box-sizing: border-box;
-  padding: 0.5rem;
+  padding: 0rem;
+  margin-bottom: 10px;
 }
 
 #navbar ul {
@@ -29,7 +31,7 @@ body {
   flex-direction: row;
   border-radius: 5px;
   border: 1px rgb(103, 154, 69) solid;
-  box-shadow: 1px 4px 1px 3px rgba(58, 158, 63, 0.602);
+  box-shadow: 0px 3px 0px 0px rgba(58, 158, 63, 0.602);
   background: #9dcc7d;
   text-align: center;
   height: 20px;
@@ -55,44 +57,24 @@ body {
 .vision {
   display: flex;
   flex-direction: column-reverse;
-  padding: 10px;
-  margin: 5px;
+  padding: 0px;
+  margin: 0px;
 }
 .vision p {
   padding: 0.5rem;
-  font-weight: bold;
+  font-size: 1.5rem;
 }
 .vision img {
+  vertical-align: top;
   width: 100%;
 }
-
 #bottom-main {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  background-color: white;
 }
 
 /* special asetukset */
-
-#specials {
-  box-sizing: border-box;
-  margin: 4px 0 4px 0;
-}
-
-#specials img {
-  max-width: 100%;
-}
-/* special asetukset */
-
-#specials {
-  box-sizing: border-box;
-  margin: 4px 0 4px 0;
-}
-
-#specials figure {
-  max-width: 100%;
-}
 
 .nauha {
   display: flex;
@@ -106,18 +88,27 @@ body {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
+
 .fa-solid {
   text-decoration: none;
+}
+
+#events,
+#news,
+#specials {
+  border: 10px white solid;
+  margin: 5px 0 5px 0;
+  background-color: white;
 }
 
 #events img {
   max-width: 100%;
 }
 
-/* news asetukset  */
-#news {
-  margin-bottom: 5px;
+#specials img {
+  max-width: 100%;
 }
+
 #news span {
   font-weight: bold;
   margin: 5px 10px 5px 5px;
@@ -137,7 +128,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 5px;
+  padding: 0px 10px 10px 10px;
   margin: 2px;
 }
 footer span {
@@ -180,14 +171,15 @@ footer p {
     display: block;
   }
   .vision {
+    border: white 10px solid;
     flex-direction: row-reverse;
     background-image: url(./assets/back-txt.jpg);
   }
   .vision figure {
-    width: 20rem;
+    width: 30rem;
   }
   .vision p {
-    font-size: 10px;
+    font-size: 15px;
     text-align: center;
     align-content: center;
   }
@@ -195,19 +187,25 @@ footer p {
   #bottom-main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 5px;
-    margin: 1px;
+    margin-top: 4px;
+  }
+
+  #events,
+  #news,
+  #specials {
+    border: 6px white solid;
   }
 
   #specials {
-    margin: 2px;
+    padding: 4px 0px 0px 5px;
   }
   #events {
-    margin: 2px;
+    padding: 4px 5px 0px 0;
   }
 
   #news {
-    margin: 2px;
+    padding: 4px 5px 0px 5px;
+
     grid-column: 1 / -1;
   }
   #news p {
@@ -227,6 +225,7 @@ footer p {
     display: block;
   }
   .vision {
+    border: white 10px solid;
     flex-direction: row-reverse;
     justify-content: space-between;
     max-width: 100%;
@@ -239,7 +238,7 @@ footer p {
   }
 
   .vision figure {
-    width: 20rem;
+    width: 30rem;
   }
 
   /* bottom main asetukset */
@@ -248,20 +247,21 @@ footer p {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    padding: 5px;
-    margin: 5px;
-  }
-  section {
-    margin: 5px;
+    padding: 0px;
+    margin: 10px 0 0px 0;
   }
 
   #news,
   #events,
   #specials {
     width: 100%;
+    padding: 4px;
   }
 
   #news p {
     font-size: 13px;
+  }
+  footer p {
+    font-size: 12px;
   }
 }
