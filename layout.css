@@ -1,0 +1,257 @@
+body {
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+  padding: 1rem;
+  width: auto;
+}
+#container {
+  background-color: rgba(132, 193, 91, 255);
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+#logo {
+  max-width: 100%;
+}
+
+#navbar {
+  display: flex;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+#navbar ul {
+  flex-direction: column;
+  width: 100%;
+}
+
+#navbar li {
+  flex-direction: row;
+  border-radius: 5px;
+  border: 1px rgb(103, 154, 69) solid;
+  box-shadow: 1px 4px 1px 3px rgba(58, 158, 63, 0.602);
+  background: #9dcc7d;
+  text-align: center;
+  height: 20px;
+  padding: 10px;
+}
+#navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+}
+#navbar li:hover {
+  background-color: rgba(203, 215, 141, 0.765);
+}
+
+#main {
+  box-sizing: border-box;
+  display: block;
+}
+/* vision asetukset */
+.vision {
+  display: flex;
+  flex-direction: column-reverse;
+  background-image: url(./assets/back-txt.jpg);
+  padding: 10px;
+  margin: 10px;
+}
+.vision p {
+  padding: 1rem;
+}
+.vision img {
+  width: 100%;
+}
+
+#bottom-main {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+/* special asetukset */
+
+#specials {
+  box-sizing: border-box;
+  margin: 4px 0 4px 0;
+}
+
+#specials img {
+  max-width: 100%;
+}
+/* special asetukset */
+
+#specials {
+  box-sizing: border-box;
+  margin: 4px 0 4px 0;
+}
+
+#specials figure {
+  max-width: 100%;
+}
+
+.nauha {
+  display: flex;
+  justify-content: space-between;
+  background: darkgray;
+  margin: 0 0 5px 0;
+  padding: 6px;
+}
+
+.nauha a {
+  text-decoration: none;
+  color: rgb(226, 211, 187);
+}
+.fa-solid {
+  text-decoration: none;
+}
+
+#events img {
+  max-width: 100%;
+}
+
+/* news asetukset  */
+#news {
+  margin-bottom: 5px;
+}
+#news span {
+  font-weight: bold;
+  margin: 5px 10px 5px 5px;
+}
+
+table {
+  border-spacing: -1px;
+  font-size: 12px;
+}
+
+td {
+  padding: 1px;
+}
+/* footer asetukset  */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
+  margin: 2px;
+}
+footer span {
+  color: white;
+}
+footer p {
+  font-size: 8px;
+  row-gap: 5px;
+}
+.fa-brands {
+  text-decoration: none;
+  max-width: 100%;
+}
+.fa-square-facebook {
+  color: white;
+}
+.fa-square-twitter {
+  color: white;
+}
+
+/*tablet asetukset */
+@media only screen and (min-width: 426px) {
+  #navbar ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  #navbar li {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  #main {
+    box-sizing: border-box;
+    display: block;
+    max-width: 100%;
+  }
+  .vision {
+    flex-direction: row;
+  }
+  .vision figure {
+    max-width: 100%;
+  }
+  .vision p {
+    font-size: 10px;
+    text-align: center;
+    align-content: center;
+  }
+
+  #bottom-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5px;
+    margin: 1px;
+  }
+
+  #specials {
+    margin: 2px;
+  }
+  #events {
+    margin: 2px;
+  }
+
+  #news {
+    margin: 2px;
+    grid-column: 1 / -1;
+  }
+  #news p {
+    font-size: 13px;
+  }
+}
+
+/* desktop view */
+@media only screen and (min-width: 769px) {
+  #navbar li {
+    flex-direction: row;
+    width: 100%;
+  }
+  /* vision asetukset */
+
+  .vision {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100%;
+    background-image: url(./assets/back-txt.jpg);
+  }
+  .vision p {
+    justify-content: center;
+    align-content: center;
+  }
+
+  .vision img {
+    width: 250px;
+  }
+
+  /* bottom main asetukset */
+
+  #bottom-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 5px;
+    margin: 5px;
+  }
+  section {
+    margin: 5px;
+  }
+
+  #news,
+  #events,
+  #specials {
+    width: 100%;
+  }
+
+  #news p {
+    font-size: 13px;
+  }
+}
